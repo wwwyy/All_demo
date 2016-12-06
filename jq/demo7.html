@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+			background: red;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body style="height: 2000px">
+	<div>div</div>
+	<span>span</span>
+	<script type="text/javascript" src='jquery-3.1.1.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			$(document).click(function(){
+				alert($(window).scrollTop())
+			})
+		})
+	</script>
+</body>
+</html>

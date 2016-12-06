@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#div1 {
+			width: 100px;height: 100px;background: red;
+		}
+		#div2 {
+			width: 100px;
+			height: 100px;
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+<div id="div1">
+</div>
+<div id="div2"></div>
+	<script type="text/javascript" src = 'jquery-3.1.1.min.js'></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#div1').hover(function(){
+				$('#div2').slideUp()
+			},function(){
+				$('#div2').slideDown()
+			})
+		})
+	</script>
+</body>
+</html>
